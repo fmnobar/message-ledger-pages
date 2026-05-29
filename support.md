@@ -38,7 +38,7 @@ and sync state. Review diagnostics before sharing them externally.
 
 ## Contact
 
-For product support, use the App Store support link or the project's GitHub
-issue tracker:
+For product support, use the App Store support link or the public support issue
+tracker:
 
-https://github.com/fmnobar/iMessageLedger/issues
+https://github.com/fmnobar/message-ledger-pages/issues

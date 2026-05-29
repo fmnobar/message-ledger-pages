@@ -68,4 +68,4 @@ using normal macOS file-management tools.
 
 ## Support
 
-For help, see the [support page](../support/).
+For help, see the [support page](https://fmnobar.github.io/message-ledger-pages/support/).
