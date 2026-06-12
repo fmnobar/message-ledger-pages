@@ -18,6 +18,14 @@ refreshes can reuse the selected source.
 If the app cannot find `chat.db`, confirm that Messages has local history on
 this Mac and choose the Messages folder again.
 
+## App Review Sample Data
+
+Apple App Review can use the synthetic sample package at
+[Message Ledger App Review Sample Data](https://fmnobar.github.io/message-ledger-pages/review/)
+to review the app without access to a real Messages history. The package
+contains a synthetic `Messages/chat.db`, an optional fictional Contacts vCard,
+and setup instructions.
+
 ## Contacts
 
 Contacts access is optional. If disabled, Message Ledger remains usable with
