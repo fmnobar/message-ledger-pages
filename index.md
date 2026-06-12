@@ -35,3 +35,4 @@ patterns without sending your Messages database to a developer server.
 
 - [Privacy Policy](privacy/)
 - [Support](support/)
+- [App Review Sample Data](review/)
