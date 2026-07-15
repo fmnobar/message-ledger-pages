@@ -36,8 +36,9 @@ Contacts access is optional. If you allow Contacts access, Messages Analytics us
 local contact information to improve participant display names and grouping.
 The app does not upload the Contacts address book, contact photos, or local
 Contacts cache. If you separately create a hidden-contact or merge rule and
-enable iCloud Sync, only the rule name and participant identifiers already
-stored in that rule are covered by the separate consent and sync boundary below.
+turn on **Sync hidden and merge choices**, only the rule name and participant
+identifiers already stored in that rule are covered by the separate consent and
+sync boundary below.
 
 If you deny Contacts access, Messages Analytics remains usable with identifiers and
 fallback labels.
@@ -45,13 +46,16 @@ fallback labels.
 ## iCloud Sync
 
 Messages Analytics can optionally use your private iCloud database to sync app
-user-state rules across your Macs. Before this sync begins, the app asks for
-your explicit consent and explains the data involved. Synced records are limited
-to hidden-contact rules, historical person merge rules, accepted group merge
-rules, and technical sync metadata. The rules can contain rule names and
-participant identifiers, such as phone numbers or email addresses, needed to
-identify the choices you made. Consent and sync enablement remain local to each
-Mac; data from iCloud cannot turn sync on or off for another Mac.
+user-state rules across your Macs. Settings > Sync shows the data involved,
+private-iCloud destination, and sync purpose beside a switch that is off by
+default and shown off until this Mac has current consent. Turning that switch
+on is your explicit consent before any private-iCloud rule read or write.
+Synced records are limited to hidden-contact rules, historical
+person merge rules, accepted group merge rules, and technical sync metadata.
+The rules can contain rule names and participant identifiers, such as phone
+numbers or email addresses, needed to identify the choices you made. Consent
+and sync enablement remain local to each Mac; data from iCloud cannot turn sync
+on or off for another Mac.
 
 This information is used only to reproduce your hidden-contact and merge choices
 on your Macs. The private iCloud database belongs to your Apple Account and is
@@ -80,10 +84,10 @@ user-state settings such as hidden contacts and merge rules where applicable.
 You can also remove the app and its local Application Support data from your Mac
 using normal macOS file-management tools.
 
-Turning off **Settings > Sync > Sync settings with iCloud** withdraws consent
-and prevents new private-iCloud rule reads and writes on that Mac. Turning sync
-on later presents the current disclosure again before syncing. Turning sync off
-does not itself delete rule records already stored in iCloud.
+Turning off **Settings > Sync > Sync hidden and merge choices** withdraws consent
+and prevents new private-iCloud rule reads and writes on that Mac. The inline
+disclosure remains visible before you turn sync on again. Turning sync off does
+not itself delete rule records already stored in iCloud.
 
 Existing synced rule records remain in your private iCloud database until they
 are replaced through sync or you remove the app's iCloud data. To delete that
