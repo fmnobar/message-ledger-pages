@@ -1,16 +1,16 @@
 ---
-title: Message Ledger
+title: Messages Analytics
 permalink: /
 ---
 
-# Message Ledger
+# Messages Analytics
 
-Message Ledger is a local-first Mac app for understanding patterns in your
+Messages Analytics is a local-first Mac app for understanding patterns in your
 Messages history.
 
 The app asks you to choose the Messages folder on your Mac, reads `chat.db` in
 read-only mode, and builds local aggregate summaries for chats, people, and
-groups. Message Ledger is designed for private review of your own conversation
+groups. Messages Analytics is designed for private review of your own conversation
 patterns without sending your Messages database to a developer server.
 
 ## What It Shows
@@ -20,19 +20,20 @@ patterns without sending your Messages database to a developer server.
 - shared item totals;
 - conversation patterns;
 - local analysis views for message length, response time, emoji, and reactions;
-- diagnostics and cache reset controls.
+- troubleshooting support information and safe analytics-cache reset controls.
 
 ## Privacy First
 
 - Your Messages source stays on your Mac.
 - The source database is opened read-only.
-- Raw message text is not persisted by Message Ledger.
+- Raw message text is not persisted by Messages Analytics.
 - Contacts access is optional.
-- iCloud sync, when enabled, is limited to app user-state rules and settings.
-- Exports and diagnostics are user-initiated.
+- With explicit consent, private-iCloud sync can store rule names and participant identifiers, such as phone numbers or email addresses, only so hidden-contact and merge choices work across your Macs.
+- The Contacts address book, contact photos, local Contacts cache, Messages data, and analytics cache are not included in iCloud sync.
+- Exports and detailed support information are user-initiated.
 
 ## Links
 
 - [Privacy Policy](privacy/)
 - [Support](support/)
-- [App Review Sample Data](review/)
+- [App Review Sample Data](https://fmnobar.github.io/message-ledger-pages/review/)

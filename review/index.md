@@ -1,18 +1,18 @@
 ---
-title: Message Ledger App Review Sample Data
+title: Messages Analytics App Review Sample Data
 permalink: /review/
 ---
 
-# Message Ledger App Review Sample Data
+# Messages Analytics App Review Sample Data
 
-Apple App Review can use this synthetic sample package to review Message Ledger
+Apple App Review can use this synthetic sample package to review Messages Analytics
 without access to a real local Messages history.
 
-[Download MessageLedger-AppReview-SampleData.zip](MessageLedger-AppReview-SampleData.zip)
+[Download MessageLedger-AppReview-SampleData.zip](https://fmnobar.github.io/message-ledger-pages/review/MessageLedger-AppReview-SampleData.zip)
 
 The package includes:
 
-- `Messages/chat.db`, a synthetic Messages database for Message Ledger review.
+- `Messages/chat.db`, a synthetic Messages database for Messages Analytics review.
 - `Contacts/message-ledger-demo-contacts.vcf`, an optional fictional Contacts
   vCard with generated portrait photos.
 - `README.txt`, setup instructions and sample coverage details.
@@ -20,13 +20,13 @@ The package includes:
 ## Review Setup
 
 1. Download and unzip the sample package.
-2. Launch Message Ledger.
-3. When Message Ledger asks for a Messages folder, choose the unzipped
+2. Launch Messages Analytics.
+3. When Messages Analytics asks for a Messages folder, choose the unzipped
    `Messages` folder that contains `chat.db`.
-4. Allow Message Ledger to build its local analytics cache.
+4. Allow Messages Analytics to build its local analytics cache.
 5. Optional: import `Contacts/message-ledger-demo-contacts.vcf` into Contacts and
-   allow Contacts access in Message Ledger to see fictional names and portraits.
-6. Use Refresh or Rebuild Cache in Message Ledger if the import needs to be run
+   allow Contacts access in Messages Analytics to see fictional names and portraits.
+6. Use Refresh or Rebuild Cache in Messages Analytics if the import needs to be run
    again.
 
 The sample data is fully synthetic and contains no real Messages, Contacts,

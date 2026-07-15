@@ -1,60 +1,74 @@
 ---
-title: Message Ledger Privacy Policy
+title: Messages Analytics Privacy Policy
 permalink: /privacy/
 ---
 
-# Message Ledger Privacy Policy
+# Messages Analytics Privacy Policy
 
-Effective date: May 28, 2026
+Effective date: July 14, 2026
 
-Message Ledger is a local-first macOS app. It helps you analyze aggregate
+Messages Analytics is a local-first macOS app. It helps you analyze aggregate
 patterns in your own Messages history while keeping the source data under your
 control.
 
 ## Messages Source Access
 
-Message Ledger asks you to choose your local Messages folder. The app stores a
+Messages Analytics asks you to choose your local Messages folder. The app stores a
 local security-scoped bookmark so it can refresh the local analytics cache after
 you approve access.
 
-Message Ledger opens the Messages `chat.db` database in read-only mode. It does
+Messages Analytics opens the Messages `chat.db` database in read-only mode. It does
 not write to or modify your Messages database.
 
 ## Local Analytics Cache
 
-Message Ledger creates a local analytics cache on your Mac. The cache stores
+Messages Analytics creates a local analytics cache on your Mac. The cache stores
 derived facts and metadata such as counts, dates, participant labels, message
 lengths, emoji/reaction counts, shared item categories, and app user-state.
 
-Message Ledger does not persist raw message bodies, subjects, attributed-body
+Messages Analytics does not persist raw message bodies, subjects, attributed-body
 strings, attachment filenames, attachment URLs, or raw Messages database tables
 as exportable app data.
 
 ## Contacts
 
-Contacts access is optional. If you allow Contacts access, Message Ledger uses
+Contacts access is optional. If you allow Contacts access, Messages Analytics uses
 local contact information to improve participant display names and grouping.
-Contacts records are not sent to a developer server.
+The app does not upload the Contacts address book, contact photos, or local
+Contacts cache. If you separately create a hidden-contact or merge rule and
+enable iCloud Sync, only the rule name and participant identifiers already
+stored in that rule are covered by the separate consent and sync boundary below.
 
-If you deny Contacts access, Message Ledger remains usable with identifiers and
+If you deny Contacts access, Messages Analytics remains usable with identifiers and
 fallback labels.
 
 ## iCloud Sync
 
-Message Ledger can optionally use iCloud to sync app user-state rules and
-settings through your Apple account. Synced user-state is limited to items such
-as hidden-contact rules, person/group merge rules, and sync settings metadata.
+Messages Analytics can optionally use your private iCloud database to sync app
+user-state rules across your Macs. Before this sync begins, the app asks for
+your explicit consent and explains the data involved. Synced records are limited
+to hidden-contact rules, historical person merge rules, accepted group merge
+rules, and technical sync metadata. The rules can contain rule names and
+participant identifiers, such as phone numbers or email addresses, needed to
+identify the choices you made. Consent and sync enablement remain local to each
+Mac; data from iCloud cannot turn sync on or off for another Mac.
 
-iCloud sync does not include message bodies, analytics cache contents, Contacts
-records, diagnostics reports, or selected-summary exports.
+This information is used only to reproduce your hidden-contact and merge choices
+on your Macs. The private iCloud database belongs to your Apple Account and is
+not visible to the developer.
 
-## Diagnostics And Exports
+iCloud user-state sync does not include message bodies, analytics cache contents,
+Contacts address-book records or photos, the local Contacts cache, diagnostics
+reports, or selected-summary exports.
 
-Diagnostics and selected-summary exports are user-initiated. Diagnostics reports
-include app/cache status and redact user-specific path components in copied or
-saved reports. Selected-summary exports contain aggregate summary fields only.
+## Support Information And Exports
 
-Message Ledger does not use advertising, tracking, or third-party analytics
+Support information and selected-summary exports are user-initiated. Help >
+Troubleshooting loads the support report only for Copy Support Information or
+Technical Details, and both paths redact user-specific path components.
+Selected-summary exports contain aggregate summary fields only.
+
+Messages Analytics does not use advertising, tracking, or third-party analytics
 SDKs.
 
 ## Data Deletion
@@ -65,6 +79,19 @@ user-state settings such as hidden contacts and merge rules where applicable.
 
 You can also remove the app and its local Application Support data from your Mac
 using normal macOS file-management tools.
+
+Turning off **Settings > Sync > Sync settings with iCloud** withdraws consent
+and prevents new private-iCloud rule reads and writes on that Mac. Turning sync
+on later presents the current disclosure again before syncing. Turning sync off
+does not itself delete rule records already stored in iCloud.
+
+Existing synced rule records remain in your private iCloud database until they
+are replaced through sync or you remove the app's iCloud data. To delete that
+copy on macOS, open **System Settings > [your name] > iCloud > Manage**, select
+Messages Analytics in the app list, choose **Delete from iCloud**, and confirm.
+Apple documents this control in [Manage iCloud storage on Mac](https://support.apple.com/guide/mac-help/manage-icloud-storage-mh36833/mac).
+Because the private database is not visible to the developer, the developer
+cannot inspect or delete it on your behalf.
 
 ## Support
 
